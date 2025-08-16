@@ -1,206 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
-
-    <!-- Bootstrap icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
-
-    <!-- my css -->
-    <link rel="stylesheet" href="style.css" />
-
-    <title>My Portfolio | Muhammad Alfariqo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Backend Developer - Muhammad Al-Fariqo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body id="home">
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#home">Muhammad Al-Fariqo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Me</a>
-            </li>
-          </ul>
-        </div>
+  <body class="bg-gray-900 text-gray-200 font-sans">
+    <!-- Header -->
+    <header class="text-center py-16">
+      <!-- Foto Profil -->
+      <div class="flex justify-center mb-6">
+        <img
+          src="img/aku.jpg"
+          alt="my profile picture"
+          class="w-40 h-40 rounded-full object-cover border-4 border-green-400 shadow-lg"
+        />
       </div>
-    </nav>
-    <!-- Akhir NavBar -->
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/aku.jpg" alt="" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Muhammad Al-Fariqo</h1>
-      <p class="lead">Code Enthusiast</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,64L40,85.3C80,107,160,149,240,176C320,203,400,213,480,186.7C560,160,640,96,720,106.7C800,117,880,203,960,202.7C1040,203,1120,117,1200,80C1280,43,1360,53,1400,58.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Jumbotron -->
+      <!-- Nama -->
+      <h1 class="text-5xl font-mono font-bold text-green-400">
+        MUHAMMAD AL-FARIQO
+      </h1>
 
-    <!-- About Me -->
-    <section id="about" class="">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-        </div>
+      <!-- Efek Typed.js -->
+      <p class="mt-4 text-lg text-gray-400">
+        <span id="typed"></span>
+      </p>
 
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis architecto fugit provident, sapiente at inventore qui, sed ab corporis!</p>
-          </div>
-          <div class="col-md-4">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt rem, esse sit, fugiat accusamus assumenda laboriosam eligendi hic facere similique consectetur, perferendis in sequi deleniti!</p>
-          </div>
-        </div>
+      <!-- Tombol -->
+      <div class="mt-6 space-x-4">
+        <a
+          href="#"
+          class="px-4 py-2 bg-green-500 text-black rounded hover:bg-green-400"
+          >Download CV</a
+        >
+        <a
+          href="https://github.com/MuhammadAlfariqo"
+          target="_blank"
+          class="px-4 py-2 border border-green-400 rounded hover:bg-green-700"
+          >GitHub</a
+        >
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,64L40,96C80,128,160,192,240,197.3C320,203,400,149,480,154.7C560,160,640,224,720,250.7C800,277,880,267,960,234.7C1040,203,1120,149,1200,128C1280,107,1360,117,1400,122.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
+    </header>
+
+    <!-- About -->
+    <section class="max-w-4xl mx-auto px-6 py-12">
+      <h2
+        class="text-2xl font-bold border-b border-gray-700 pb-2 text-green-400"
+      >
+        ABOUT
+      </h2>
+      <p class="mt-4 text-gray-300">
+        Saya adalah backend developer yang fokus pada pengembangan API, sistem
+        informasi, dan automasi berbasis Linux. Familiar dengan
+        <span class="text-green-400">Laravel</span>,
+        <span class="text-green-400">CodeIgniter</span>,
+        <span class="text-green-400">Node.js</span>, serta teknologi server.
+      </p>
     </section>
-    <!-- Akhir "About Me" -->
+
+    <!-- Skills -->
+    <section class="max-w-4xl mx-auto px-6 py-12">
+      <h2
+        class="text-2xl font-bold border-b border-gray-700 pb-2 text-green-400"
+      >
+        My Skills
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6 text-center">
+        <div class="bg-gray-800 p-4 rounded shadow">PHP</div>
+        <div class="bg-gray-800 p-4 rounded shadow">Laravel</div>
+        <div class="bg-gray-800 p-4 rounded shadow">MySQL</div>
+        <div class="bg-gray-800 p-4 rounded shadow">Linux</div>
+        <div class="bg-gray-800 p-4 rounded shadow">Docker</div>
+        <div class="bg-gray-800 p-4 rounded shadow">Git</div>
+        <div class="bg-gray-800 p-4 rounded shadow">REST API</div>
+        <div class="bg-gray-800 p-4 rounded shadow">CI/CD</div>
+      </div>
+    </section>
 
     <!-- Projects -->
-    <section id="projects">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center mb-3">
-            <h2>My Project</h2>
-          </div>
+    <section class="max-w-4xl mx-auto px-6 py-12">
+      <h2
+        class="text-2xl font-bold border-b border-gray-700 pb-2 text-green-400"
+      >
+        My Recent Projects
+      </h2>
+      <div class="space-y-6 mt-6">
+        <div class="bg-gray-800 p-6 rounded shadow">
+          <h3 class="font-mono text-lg text-blue-400">Website Desa</h3>
+          <p class="text-gray-300">
+            Sistem informasi desa berbasis Laravel & Leaflet.
+          </p>
+          <a href="#" class="text-green-400 hover:underline"
+            >🔗 Lihat di GitHub</a
+          >
         </div>
-
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <a href="https://muhammadalfariqo.github.io/minikasir/"><img src="img/foto1.jpg" class="card-img-top" alt="Foto Project" /></a>
-              <div class="card-body">
-                <p class="card-text">Sebuah projek seperti kasir dimana kita dapat menginput total harga belanjaan dan kita juga dapat memasukan input tunai uang dan menghitung kembalian</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/foto2.jpg" class="card-img-top" alt="Foto Project" />
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/foto3.jpg" class="card-img-top" alt="Foto Project" />
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, eveniet inventore deserunt odio.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/foto4.jpg" class="card-img-top" alt="Foto Project" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/foto5.jpg" class="card-img-top" alt="Foto Project" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/foto6.jpg" class="card-img-top" alt="Foto Project" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
+        <div class="bg-gray-800 p-6 rounded shadow">
+          <h3 class="font-mono text-lg text-blue-400">SPK Beasiswa</h3>
+          <p class="text-gray-300">
+            Aplikasi seleksi beasiswa berbasis TOPSIS (CodeIgniter 4).
+          </p>
+          <a href="#" class="text-green-400 hover:underline"
+            >🔗 Lihat di GitHub</a
+          >
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,128L40,106.7C80,85,160,43,240,42.7C320,43,400,85,480,117.3C560,149,640,171,720,192C800,213,880,235,960,224C1040,213,1120,171,1200,154.7C1280,139,1360,149,1400,154.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Akhir Projects -->
 
     <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center mb-3">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="name" class="form-control" id="name" aria-describedby="name" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#0d6efd"
-          fill-opacity="1"
-          d="M0,256L40,224C80,192,160,128,240,133.3C320,139,400,213,480,224C560,235,640,181,720,186.7C800,192,880,256,960,288C1040,320,1120,320,1200,309.3C1280,299,1360,277,1400,266.7L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
+    <section class="max-w-4xl mx-auto px-6 py-12">
+      <h2
+        class="text-2xl font-bold border-b border-gray-700 pb-2 text-green-400"
+      >
+        Kontak
+      </h2>
+      <p>
+        Email:
+        <a href="mailto:riqo@example.com" class="text-green-400"
+          >riqo@example.com</a
+        >
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/riqo" target="_blank" class="text-green-400"
+          >github.com/riqo</a
+        >
+      </p>
     </section>
-    <!-- Akhir Contact -->
 
     <!-- Footer -->
-    <footer class="bg-primary text-white text-center pb-5">
-      <p>Create with <i class="bi bi-suit-heart-fill text-danger"></i> by <a class="text-white fw-bold" href="#">Muhammad Alfariqo</a></p>
+    <footer class="bg-gray-800 text-center py-6 mt-10 text-gray-400">
+      <p>© 2025 RiQo | "Code. Build. Deploy. Repeat."</p>
     </footer>
-    <!-- Akhir dari Footer -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+      new Typed("#typed", {
+        strings: ["Backend Developer", "API Enthusiast", "Open Source Lover"],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
