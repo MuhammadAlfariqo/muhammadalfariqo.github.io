@@ -81,11 +81,8 @@
         <div class="bg-gray-800 p-4 rounded shadow">PHP</div>
         <div class="bg-gray-800 p-4 rounded shadow">Laravel</div>
         <div class="bg-gray-800 p-4 rounded shadow">MySQL</div>
-        <div class="bg-gray-800 p-4 rounded shadow">Linux</div>
-        <div class="bg-gray-800 p-4 rounded shadow">Docker</div>
         <div class="bg-gray-800 p-4 rounded shadow">Git</div>
         <div class="bg-gray-800 p-4 rounded shadow">REST API</div>
-        <div class="bg-gray-800 p-4 rounded shadow">CI/CD</div>
       </div>
     </section>
 
@@ -224,20 +221,15 @@
       >
         CONTACT
       </h2>
-      <form
-        action="mailto:muhammadalfariqo@gmail.com"
-        method="POST"
-        enctype="text/plain"
-        class="mt-6 space-y-4"
-      >
+
+      <form id="contactForm" class="mt-6 space-y-4">
         <!-- Email -->
         <div>
-          <label for="email" class="block text-gray-300 mb-1"
-            >Email<sup class="text-red-400">*</sup></label
-          >
+          <label for="email" class="block text-gray-300 mb-1">
+            Your Email<sup class="text-red-400">*</sup>
+          </label>
           <input
             type="email"
-            name="email"
             id="email"
             required
             class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -246,12 +238,11 @@
 
         <!-- Subject -->
         <div>
-          <label for="subject" class="block text-gray-300 mb-1"
-            >Subject<sup class="text-red-400">*</sup></label
-          >
+          <label for="subject" class="block text-gray-300 mb-1">
+            Subject<sup class="text-red-400">*</sup>
+          </label>
           <input
             type="text"
-            name="subject"
             id="subject"
             required
             class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -260,11 +251,10 @@
 
         <!-- Message -->
         <div>
-          <label for="message" class="block text-gray-300 mb-1"
-            >Message<sup class="text-red-400">*</sup></label
-          >
+          <label for="message" class="block text-gray-300 mb-1">
+            Message<sup class="text-red-400">*</sup>
+          </label>
           <textarea
-            name="message"
             id="message"
             rows="5"
             required
@@ -287,14 +277,32 @@
       <p>© 2025 RiQo | "Code. Build. Deploy. Repeat."</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script>
       new Typed("#typed", {
-        strings: ["Backend Developer", "API Enthusiast", "Open Source Lover"],
+        strings: [
+          "Junior Web Developer",
+          "API Enthusiast",
+          "Open Source Lover",
+        ],
         typeSpeed: 60,
         backSpeed: 40,
         loop: true,
       });
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const email = document.getElementById("email").value;
+          const subject = document.getElementById("subject").value;
+          const message = document.getElementById("message").value;
+
+          const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=muhammadalfariqo@gmail.com&su=${encodeURIComponent(
+            subject
+          )}&body=${encodeURIComponent(message + "\n\nFrom: " + email)}`;
+
+          window.open(gmailUrl, "_blank");
+        });
     </script>
   </body>
 </html>
