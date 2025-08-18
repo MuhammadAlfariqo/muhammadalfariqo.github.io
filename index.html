@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Backend Developer - Muhammad Al-Fariqo</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
   <body class="bg-gray-900 text-gray-200 font-sans">
     <!-- Header -->
@@ -45,7 +46,7 @@
     </header>
 
     <!-- About -->
-    <section class="max-w-4xl mx-auto px-6 py-12">
+    <section class="max-w-4xl mx-auto px-6 py-12" data-aos="zoom-in-up">
       <h2
         class="text-2xl font-bold border-b border-gray-700 pb-2 text-green-400"
       >
@@ -71,7 +72,7 @@
     </section>
 
     <!-- Skills -->
-    <section class="max-w-4xl mx-auto px-6 py-12">
+    <section class="max-w-4xl mx-auto px-6 py-12" data-aos="zoom-in-up">
       <h2
         class="text-2xl font-bold border-b border-gray-700 pb-2 text-green-400"
       >
@@ -87,135 +88,150 @@
     </section>
 
     <!-- Projects -->
-    <section class="max-w-4xl mx-auto px-6 py-12">
+    <section class="max-w-4xl mx-auto px-6 py-12" data-aos="zoom-in-up">
       <h2
         class="text-2xl font-bold border-b border-gray-700 pb-2 text-green-400"
       >
         PROJECTS
       </h2>
 
-      <!-- Grid 2 kolom (responsive) -->
-      <div class="grid sm:grid-cols-2 gap-6 mt-6">
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap gap-3 mt-4">
+        <button
+          class="filter-btn px-4 py-2 bg-gray-700 text-green-400 rounded-full"
+          data-filter="all"
+        >
+          All
+        </button>
+        <button
+          class="filter-btn px-4 py-2 bg-gray-700 text-green-400 rounded-full"
+          data-filter="Laravel"
+        >
+          Laravel
+        </button>
+        <button
+          class="filter-btn px-4 py-2 bg-gray-700 text-green-400 rounded-full"
+          data-filter="Codeigniter"
+        >
+          Codeigniter
+        </button>
+        <button
+          class="filter-btn px-4 py-2 bg-gray-700 text-green-400 rounded-full"
+          data-filter="MySQL"
+        >
+          MySQL
+        </button>
+        <button
+          class="filter-btn px-4 py-2 bg-gray-700 text-green-400 rounded-full"
+          data-filter="Leaflet.js"
+        >
+          Leaflet.js
+        </button>
+        <button
+          class="filter-btn px-4 py-2 bg-gray-700 text-green-400 rounded-full"
+          data-filter="Filament"
+        >
+          Filament
+        </button>
+      </div>
+
+      <!-- Grid 2 kolom -->
+      <div class="grid sm:grid-cols-2 gap-6 mt-6" id="projects">
         <!-- Card Project -->
-        <div class="bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
-          <!-- Thumbnail -->
+        <div
+          class="project bg-gray-800 rounded-2xl shadow-lg overflow-hidden"
+          data-tags="Laravel,Leaflet.js,MySQL"
+        >
           <img
             src="img/foto4.jpg"
             alt="Website Desa"
             class="w-full h-48 object-cover"
           />
-          <!-- Content -->
           <div class="p-6">
             <h3 class="font-mono text-lg text-blue-400">Website Desa</h3>
             <p class="text-gray-300 mt-2">
               Sistem informasi desa berbasis Laravel & Leaflet.
             </p>
-            <!-- Tags -->
             <div class="flex flex-wrap gap-2 mt-4">
               <span
-                class="px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full"
+                class="tag px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full cursor-pointer"
                 >Laravel</span
               >
               <span
-                class="px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full"
+                class="tag px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full cursor-pointer"
                 >Leaflet.js</span
               >
               <span
-                class="px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full"
+                class="tag px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full cursor-pointer"
                 >MySQL</span
               >
             </div>
-            <!-- Link -->
-            <a
-              href="https://github.com/MuhammadAlfariqo"
-              target="_blank"
-              class="inline-block mt-4 px-4 py-2 border border-green-400 rounded hover:bg-green-700 text-green-400"
-            >
-              🔗 View on GitHub
-            </a>
           </div>
         </div>
-        <div class="bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
-          <!-- Thumbnail -->
+
+        <div
+          class="project bg-gray-800 rounded-2xl shadow-lg overflow-hidden"
+          data-tags="Codeigniter,MySQL"
+        >
           <img
             src="img/foto5.jpg"
-            alt="Website Desa"
+            alt="E-Arsip"
             class="w-full h-48 object-cover"
           />
-          <!-- Content -->
           <div class="p-6">
-            <h3 class="font-mono text-lg text-blue-400">Website Desa</h3>
+            <h3 class="font-mono text-lg text-blue-400">E-Arsip</h3>
             <p class="text-gray-300 mt-2">
-              Sistem informasi desa berbasis Laravel & Leaflet.
+              Sistem Informasi untuk mencatat surat keluar dan surat Masuk.
             </p>
-            <!-- Tags -->
             <div class="flex flex-wrap gap-2 mt-4">
               <span
-                class="px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full"
-                >Laravel</span
+                class="tag px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full cursor-pointer"
+                >Codeigniter</span
               >
               <span
-                class="px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full"
-                >Leaflet.js</span
-              >
-              <span
-                class="px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full"
+                class="tag px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full cursor-pointer"
                 >MySQL</span
               >
             </div>
-            <!-- Link -->
-            <a
-              href="https://github.com/MuhammadAlfariqo"
-              target="_blank"
-              class="inline-block mt-4 px-4 py-2 border border-green-400 rounded hover:bg-green-700 text-green-400"
-            >
-              🔗 View on GitHub
-            </a>
           </div>
         </div>
-        <div class="bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
-          <!-- Thumbnail -->
+
+        <div
+          class="project bg-gray-800 rounded-2xl shadow-lg overflow-hidden"
+          data-tags="Laravel,Filament,MySQL"
+        >
           <img
             src="img/foto6.jpg"
-            alt="Website Desa"
+            alt="Coffeeshop App"
             class="w-full h-48 object-cover"
           />
-          <!-- Content -->
           <div class="p-6">
-            <h3 class="font-mono text-lg text-blue-400">Website Desa</h3>
+            <h3 class="font-mono text-lg text-blue-400">Coffeeshop App</h3>
             <p class="text-gray-300 mt-2">
-              Sistem informasi desa berbasis Laravel & Leaflet.
+              Website untuk manajemen Coffeeshop: landing page, booking meja,
+              kasir, stok, laporan keuangan.
             </p>
-            <!-- Tags -->
             <div class="flex flex-wrap gap-2 mt-4">
               <span
-                class="px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full"
+                class="tag px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full cursor-pointer"
                 >Laravel</span
               >
               <span
-                class="px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full"
-                >Leaflet.js</span
+                class="tag px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full cursor-pointer"
+                >Filament</span
               >
               <span
-                class="px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full"
+                class="tag px-3 py-1 bg-gray-700 text-green-400 text-sm rounded-full cursor-pointer"
                 >MySQL</span
               >
             </div>
-            <!-- Link -->
-            <a
-              href="https://github.com/MuhammadAlfariqo"
-              target="_blank"
-              class="inline-block mt-4 px-4 py-2 border border-green-400 rounded hover:bg-green-700 text-green-400"
-            >
-              🔗 View on GitHub
-            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section class="max-w-4xl mx-auto px-6 py-12">
+    <section class="max-w-4xl mx-auto px-6 py-12" data-aos="zoom-in-up">
       <h2
         class="text-2xl font-bold border-b border-gray-700 pb-2 text-green-400"
       >
@@ -276,8 +292,13 @@
     <footer class="bg-gray-800 text-center py-6 mt-10 text-gray-400">
       <p>© 2025 RiQo | "Code. Build. Deploy. Repeat."</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
+      AOS.init({
+        duration: 800, // durasi animasi
+        once: true, // animasi hanya sekali
+      });
       new Typed("#typed", {
         strings: [
           "Junior Web Developer",
@@ -303,6 +324,35 @@
 
           window.open(gmailUrl, "_blank");
         });
+
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const projects = document.querySelectorAll(".project");
+      const tags = document.querySelectorAll(".tag");
+
+      function filterProjects(filter) {
+        projects.forEach((project) => {
+          const tags = project.dataset.tags.split(",");
+          if (filter === "all" || tags.includes(filter)) {
+            project.style.display = "block";
+          } else {
+            project.style.display = "none";
+          }
+        });
+      }
+
+      // Filter via button
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterProjects(btn.dataset.filter);
+        });
+      });
+
+      // Filter via clicking tag inside project card
+      tags.forEach((tag) => {
+        tag.addEventListener("click", () => {
+          filterProjects(tag.innerText);
+        });
+      });
     </script>
   </body>
 </html>
